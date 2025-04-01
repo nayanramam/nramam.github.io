@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Personal Website</title>
-  <link rel="stylesheet" href="index.css">
+  <!-- Tailwind CSS from CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="index.css" />
 </head>
-<body>
-  <header>
-    <h1>Introduction</h1>
-    <p>
-      <strong>1st year Electrical Engineering @ Georgia Tech</strong><br>
-      <strong>Threads</strong>: Circuit Technology &amp; Signal Processing/AI<br>
-      <strong>Career Interests</strong>: Entrepreneurial audio hardware development<br>
-      <strong>Activities</strong>:
-    </p>
-    <ul>
-      <li>Co-lead of AI interpretability research team</li>
-      <li>Digital design sub-team member, Silicon Jackets (chip design club)</li>
-    </ul>
-  </header>
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <div class="container mx-auto px-4 py-8">
+    <!-- Header -->
+    <header class="bg-white shadow-md rounded-lg p-6 mb-8">
+      <h1 class="text-3xl font-bold text-blue-600 mb-4">Introduction</h1>
+      <p class="mb-4">
+        <span class="font-semibold">1st year Electrical Engineering @ Georgia Tech</span><br />
+        <span class="font-semibold">Threads:</span> Circuit Technology &amp; Signal Processing/AI<br />
+        <span class="font-semibold">Career Interests:</span> Entrepreneurial audio hardware development<br />
+        <span class="font-semibold">Activities:</span>
+      </p>
+      <ul class="list-disc list-inside">
+        <li>Co-lead of AI interpretability research team</li>
+        <li>Digital design sub-team member, Silicon Jackets (chip design club)</li>
+      </ul>
+    </header>
 
-  <main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
+    <!-- About Me -->
+    <section id="about" class="bg-white shadow rounded-lg p-6 mb-8">
+      <h2 class="text-2xl font-semibold text-blue-600 border-b-2 border-blue-200 pb-2 mb-4">About Me</h2>
+      <p class="mb-4">
         I've always been drawn to the meeting point of technology and creativity. At Georgia Tech, I'm exploring electrical engineering with focuses in circuit technology and signal processing/AI – areas that complement my interest in audio technology.
       </p>
-      <p>
+      <p class="mb-4">
         My work with Silicon Jackets has introduced me to the detailed world of chip design, revealing complexities and possibilities I hadn't considered before. In parallel, co-leading research on neural network polysemanticity has given me a glimpse into how AI systems process information – concepts that could have interesting applications in audio technology.
       </p>
-      <p>
+      <p class="mb-4">
         I find myself most engaged when exploring connections between these technical fields and my passion for music production. Understanding both the engineering principles and creative needs gives me a perspective I hope to develop further throughout my education.
       </p>
-      <p>
+      <p class="mb-4">
         As a first-year student, I recognize I have much to learn, but I'm building a foundation of skills in RTL design, AI, and circuit design while maintaining my connection to audio and music production.
       </p>
       <p>
@@ -41,44 +46,47 @@
       </p>
     </section>
 
-    <section id="career">
-      <h2>Career Goals</h2>
-      <p>
+    <!-- Career Goals -->
+    <section id="career" class="bg-white shadow rounded-lg p-6 mb-8">
+      <h2 class="text-2xl font-semibold text-blue-600 border-b-2 border-blue-200 pb-2 mb-4">Career Goals</h2>
+      <p class="mb-4">
         At this point, I am not entirely certain of my specific career path. I am currently an electrical engineering major, and my threads/coursework is oriented with the goal of audio hardware development/music technology in mind. However, through Silicon Jackets I have discovered an additional passion for chip design. I am considering a switch to computer engineering, reorienting my career path to the chip design route, but for now I am sticking with EE.
       </p>
-      <p>
+      <p class="mb-4">
         I am also considering finding the niche merging these paths; for instance, working with FPGAs for audio processing purposes.
       </p>
-      <p>
-        Yet regardless of my route, my overarching destination is <strong>entrepreneurship</strong>. My plan for my first year was to build up my technical skills, which I have done through:
+      <p class="mb-4">
+        Yet regardless of my route, my overarching destination is <span class="font-bold">entrepreneurship</span>. My plan for my first year was to build up my technical skills, which I have done through:
       </p>
-      <ul>
+      <ul class="list-disc list-inside mb-4">
         <li>Silicon Jackets</li>
         <li>AI interpretability research</li>
         <li>Passion projects</li>
         <li>A summer research position at San José State University</li>
       </ul>
       <p>
-        In my coming years at GT, I plan on applying those skills by joining <strong>Create-X</strong> and/or <strong>Startup Exchange</strong>, two startup accelerators here at Tech.
+        In my coming years at GT, I plan on applying those skills by joining <span class="font-bold">Create-X</span> and/or <span class="font-bold">Startup Exchange</span>, two startup accelerators here at Tech.
       </p>
     </section>
 
-    <section id="projects">
-      <h2>Project Showcase</h2>
+    <!-- Project Showcase -->
+    <section id="projects" class="bg-white shadow rounded-lg p-6 mb-8">
+      <h2 class="text-2xl font-semibold text-blue-600 border-b-2 border-blue-200 pb-2 mb-4">Project Showcase</h2>
 
-      <article class="project">
-        <h3>Neuron Research</h3>
-        <p>
-          As part of Georgia Tech's <strong>Math Modeling Student Research Group</strong>, I have worked with fellow students to explore and quantify <em>polysemanticity</em> in neural networks.
+      <!-- Neuron Research -->
+      <article class="mb-6">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Neuron Research</h3>
+        <p class="mb-2">
+          As part of Georgia Tech's <span class="font-bold">Math Modeling Student Research Group</span>, I have worked with fellow students to explore and quantify <em>polysemanticity</em> in neural networks.
         </p>
-        <p>
+        <p class="mb-2">
           Polysemanticity is a phenomenon where a neuron is activated by more than one feature (e.g., curves <em>and</em> straight lines). Using the structural similarity index measure (SSIM), we analyze diversified feature visualizations for a neuron to quantify polysemanticity.
         </p>
-        <p>
-          We initially used a shrunken version of <strong>LeNet-5</strong> on the <strong>MNIST</strong> dataset but switched to <strong>CIFAR-10</strong> due to MNIST’s limitations in image detail. This transition helped us identify more nuanced traits that activated neurons (e.g., color or shape direction).
+        <p class="mb-2">
+          We initially used a shrunken version of <span class="font-bold">LeNet-5</span> on the <span class="font-bold">MNIST</span> dataset but switched to <span class="font-bold">CIFAR-10</span> due to MNIST’s limitations in image detail. This transition helped us identify more nuanced traits that activated neurons (e.g., color or shape direction).
         </p>
-        <p>Key takeaways include:</p>
-        <ul>
+        <p class="mb-2">Key takeaways include:</p>
+        <ul class="list-disc list-inside mb-2">
           <li>CIFAR-10 allowed clearer feature visualizations (e.g., blue backgrounds, diagonal shapes)</li>
           <li>Polysemanticity is not always reflected by class diversity in activations</li>
           <li>Accuracy dropped from ~100% to ~68% with CIFAR, but that didn’t impact our polysemanticity testing</li>
@@ -88,38 +96,40 @@
         </p>
       </article>
 
-      <article class="project">
-        <h3>MIDI Moog</h3>
-        <p>
-          <strong>MIDI Moog</strong> is a custom MIDI controller replicating the <strong>Minimoog</strong> synthesizer’s layout. When paired with Minimoog emulation software (e.g., Arturia’s Mini V3), it provides a hardware-like experience at a fraction of the cost.
+      <!-- MIDI Moog -->
+      <article class="mb-6">
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">MIDI Moog</h3>
+        <p class="mb-2">
+          <span class="font-bold">MIDI Moog</span> is a custom MIDI controller replicating the <span class="font-bold">Minimoog</span> synthesizer’s layout. When paired with Minimoog emulation software (e.g., Arturia’s Mini V3), it provides a hardware-like experience at a fraction of the cost.
         </p>
-        <p>The controller is powered by:</p>
-        <ul>
-          <li><strong>Teensy 4.1</strong> microcontroller</li>
-          <li><strong>I2C analog I/O expansion ICs</strong></li>
-          <li><strong>SPI digital I/O expansion ICs</strong></li>
+        <p class="mb-2">The controller is powered by:</p>
+        <ul class="list-disc list-inside mb-2">
+          <li><span class="font-bold">Teensy 4.1</span> microcontroller</li>
+          <li><span class="font-bold">I2C analog I/O expansion ICs</span></li>
+          <li><span class="font-bold">SPI digital I/O expansion ICs</span></li>
         </ul>
         <p>
           Initially, I tried using an Arduino Nano, but due to USB MIDI limitations and latency with multiplexers, I switched to the Teensy, which offered cleaner USB MIDI integration and more direct I/O for latency-free control.
         </p>
       </article>
 
-      <article class="project">
-        <h3>Nextro</h3>
-        <p>
-          <strong>Nextro</strong> is a prototype that converts <strong>text prompts into synth presets</strong>.
+      <!-- Nextro -->
+      <article>
+        <h3 class="text-xl font-semibold text-blue-600 mb-2">Nextro</h3>
+        <p class="mb-2">
+          <span class="font-bold">Nextro</span> is a prototype that converts <span class="font-bold">text prompts into synth presets</span>.
         </p>
-        <p>
-          My goal was to automate sound design using LLMs. Instead of generating audio directly (which requires advanced ML techniques), I created a system that translates text descriptions into <strong>JSON-formatted preset files</strong> for a synthesizer plugin.
+        <p class="mb-2">
+          My goal was to automate sound design using LLMs. Instead of generating audio directly (which requires advanced ML techniques), I created a system that translates text descriptions into <span class="font-bold">JSON-formatted preset files</span> for a synthesizer plugin.
         </p>
-        <p><strong>Tech Stack:</strong></p>
-        <ul>
+        <p class="mb-2"><span class="font-bold">Tech Stack:</span></p>
+        <ul class="list-disc list-inside mb-2">
           <li>Python for prompt-to-JSON conversion</li>
           <li>C++ audio plugin integration</li>
           <li>Open-source synthesizer as the base</li>
         </ul>
-        <p>Challenges included:</p>
-        <ul>
+        <p class="mb-2">Challenges included:</p>
+        <ul class="list-disc list-inside mb-2">
           <li>Learning C++ from scratch for plugin integration</li>
           <li>Selecting an LLM (initially GPT-3.5 for cost; future plans include GPT-4o-mini or Claude)</li>
           <li>Curating text/preset pairs for fine-tuning (future work)</li>
@@ -129,10 +139,12 @@
         </p>
       </article>
     </section>
-  </main>
 
-  <footer>
-    <p>Want to chat about synths, circuits, or startups? Let’s connect!</p>
-  </footer>
+    <!-- Footer -->
+    <footer class="text-center text-sm text-gray-600 mt-8 border-t pt-4">
+      <p>Want to chat about synths, circuits, or startups? Let’s connect!</p>
+    </footer>
+  </div>
 </body>
 </html>
+
